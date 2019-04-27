@@ -1,6 +1,5 @@
 import * as React from "react";
 import styled from "src/presentation/theme/styled-components";
-import { H3 } from "src/presentation/utility/Heading";
 import { PageSection } from "src/presentation/utility/mixins/PageSection";
 
 const HeaderElem = styled.header`
@@ -20,7 +19,6 @@ const Logo = styled.span`
   background-image: url(/assets/images/logo/logo.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
 
   margin-right: 10px;
   @media (min-width: ${props => props.theme.mediaQueries.sizes.small}) {
@@ -28,26 +26,8 @@ const Logo = styled.span`
   }
 `;
 
-const TextSection = styled.section`
-  display: flex;
-  flex-direction: column;
-`;
-const TextLogo = styled.img`
-  flex-basis: 5rem;
-  flex: 1;
-  max-width: 100%;
-`;
-const Subheader = styled(H3)`
-  color: ${props => props.theme.palette.secondary};
-  display: block;
-`;
-
 export const Header: React.StatelessComponent<{}> = () => (
   <HeaderElem>
     <Logo />
-    <TextSection>
-      <TextLogo src="/assets/images/logo/text-logo.svg" />
-      <Subheader>三鷹ハウス</Subheader>
-    </TextSection>
   </HeaderElem>
 );
