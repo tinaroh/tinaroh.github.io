@@ -90,12 +90,6 @@ const BannerSection = styled.section`
   }
 `;
 
-const BannerSubheader = styled(Paragraph)`
-  font-weight: 300;
-  left: 50px;
-  top: 50px;
-`;
-
 const PlaceStyles = css`
   display: block;
   width: 550px;
@@ -135,11 +129,7 @@ export class HomePage extends React.Component<{}> {
     return (
       <>
         <NavBar entries={pageEntries} />
-        <BannerSection>
-          <BannerSubheader>
-            software engineer. hobbyist illustrator, dancer, writer, weeb.
-          </BannerSubheader>
-        </BannerSection>
+        <BannerSection />
 
         <PageBody>
           <PageSectionTitle id="work">work</PageSectionTitle>
@@ -152,7 +142,7 @@ export class HomePage extends React.Component<{}> {
           <PageSectionTitle id="art">art</PageSectionTitle>
           <SectionSubtitle>drawing and other things</SectionSubtitle>
           <Carousel
-            heightMode="max"
+            heightMode="first"
             autoplay={true}
             wrapAround={true}
             renderBottomCenterControls={renderBottomCenterControls}
