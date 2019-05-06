@@ -2,7 +2,7 @@ import NukaCarousel from "nuka-carousel";
 import * as React from "react";
 
 import styled, { css } from "src/presentation/theme/styled-components";
-import { H2, H3 } from "src/presentation/utility/Heading";
+import { H2, H3, H4 } from "src/presentation/utility/Heading";
 import {
   INavBarProps,
   NavBar,
@@ -55,7 +55,10 @@ const pageEntries: INavBarProps["entries"] = [
 const PageSectionTitle = styled(H2)`
   color: ${props => props.theme.palette.secondary};
 `;
-const SectionSubtitle = styled(H3)`
+const SectionTitle = styled(H3)`
+  color: ${props => props.theme.palette.primary};
+`;
+const SectionSubtitle = styled(H4)`
   color: ${props => props.theme.palette.primary};
 `;
 
@@ -133,14 +136,64 @@ export class HomePage extends React.Component<{}> {
 
         <PageBody>
           <PageSectionTitle id="work">work</PageSectionTitle>
-          <SectionSubtitle>work work work</SectionSubtitle>
-          <Paragraph>work experience here</Paragraph>
+
+          <SectionTitle>Raha</SectionTitle>
+          <SectionSubtitle>Co-founder</SectionSubtitle>
+          <Paragraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Paragraph>
+
+          <SectionTitle>Snapchat</SectionTitle>
+          <SectionSubtitle>Software Engineer</SectionSubtitle>
+          <Paragraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Paragraph>
+
+          <SectionTitle>Google</SectionTitle>
+          <SectionSubtitle>Software Engineering Intern</SectionSubtitle>
+          <Paragraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Paragraph>
 
           <PageSectionTitle id="code">code</PageSectionTitle>
-          <SectionSubtitle>coding projects</SectionSubtitle>
+          <Paragraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Paragraph>
 
           <PageSectionTitle id="art">art</PageSectionTitle>
-          <SectionSubtitle>drawing and other things</SectionSubtitle>
+          <Paragraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Paragraph>
           <Carousel
             heightMode="first"
             autoplay={true}
@@ -153,10 +206,10 @@ export class HomePage extends React.Component<{}> {
             <img src={img4} alt="Alive Fanart - Aoi Tezuka" />
           </Carousel>
           <PageSectionTitle id="blog">blog</PageSectionTitle>
-          <SectionSubtitle>link out to blog</SectionSubtitle>
+          <SectionTitle>link out to blog</SectionTitle>
         </PageBody>
         <ContactSection id="contact">
-          <ContactSectionTitle id="contact">Get in touch</ContactSectionTitle>
+          <ContactSectionTitle id="contact">contact</ContactSectionTitle>
           <Paragraph>
             email at <Link to={mailtoLink}>me@tinaroh.com</Link>,
           </Paragraph>

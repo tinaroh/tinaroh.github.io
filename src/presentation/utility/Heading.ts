@@ -3,7 +3,7 @@ import { TextBlockStyle } from "src/presentation/utility/mixins/text/TextBlockSt
 import { Paragraph } from "src/presentation/utility/Paragraph";
 
 const HeaderMixin = css`
-  font-weight: 700;
+  font-weight: 400;
 `;
 
 export const H1 = styled.h1`
@@ -15,32 +15,34 @@ export const H1 = styled.h1`
   ${TextBlockStyle};
 `;
 export const H2 = styled.h2`
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   @media (min-width: ${props => props.theme.mediaQueries.sizes.small}) {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
+    font-family: ${props => props.theme.headerText.fontFamily},
+      ${props => props.theme.headerText.fontFallback};
   }
   ${HeaderMixin};
   ${TextBlockStyle};
 `;
 export const H3 = styled.h3`
-  font-size: 2rem;
+  font-size: 1.5rem;
   @media (min-width: ${props => props.theme.mediaQueries.sizes.small}) {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    font-family: ${props => props.theme.headerText.fontFamily},
+      ${props => props.theme.headerText.fontFallback};
   }
   ${HeaderMixin};
-  ${TextBlockStyle};
 `;
 
 export const H4 = styled(Paragraph)`
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   @media (min-width: ${props => props.theme.mediaQueries.sizes.small}) {
-    font-size: 2rem;
+    font-size: 1.1rem;
+    color: ${props => props.theme.palette.secondary};
   }
   ${HeaderMixin};
-  ${TextBlockStyle};
 `;
 export const H5 = styled(Paragraph)`
   font-size: 1.4rem;
   ${HeaderMixin};
-  ${TextBlockStyle};
 `;

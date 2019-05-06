@@ -1,7 +1,12 @@
 export const text = {
-  fontFamily: "Nunito Sans",
+  fontFamily: "Lato",
   fontFallback: "sans-serif",
   size: {
     paragraph: "1.2rem"
   }
+};
+
+export const headerText = {
+  fontFamily: "Merriweather",
+  fontFallback: "serif"
 };

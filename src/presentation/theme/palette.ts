@@ -1,9 +1,9 @@
 import * as color from "color";
 
 export const palette = {
-  primary: "#621D08", // dark enough for 3 contrast ratio with white
-  secondary: "#719B09",
-  interactive: "#e24b00",
+  primary: "#000000", // dark enough for 3 contrast ratio with white
+  secondary: "#aa8777",
+  interactive: "#719B09",
   background: "#f7e7cf",
   disabled: "#888888"
 };

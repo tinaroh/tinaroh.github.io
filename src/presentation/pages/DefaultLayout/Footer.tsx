@@ -1,4 +1,3 @@
-import * as color from "color";
 import * as React from "react";
 
 import styled from "src/presentation/theme/styled-components";
@@ -11,12 +10,8 @@ const InfoSection = styled.section`
   align-items: center;
   text-align: center;
   padding: 2rem;
-  color: white;
-  background-color: ${props =>
-    color(props.theme.palette.primary)
-      .darken(0.4)
-      .desaturate(0.4)
-      .string()};
+  color: "#888888";
+  background-color: "#ffffff";
 `;
 
 export const Footer: React.StatelessComponent<{}> = () => (

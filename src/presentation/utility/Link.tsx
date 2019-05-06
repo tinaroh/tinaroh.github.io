@@ -27,11 +27,17 @@ export interface ILinkProps {
 
 const HyperlinkA = styled.a`
   color: ${props => props.theme.palette.interactive};
-  font-weight: 700;
+  font-family: ${props => props.theme.headerText.fontFamily},
+    ${props => props.theme.headerText.fontFallback};
+  text-decoration: none;
   transition: color 0.1s ease-in;
 
   :hover {
-    color: ${props => highlightColor(props.theme.palette.interactive)}
+    color: ${props => highlightColor(props.theme.palette.interactive)};
+    border-bottom: 1px solid
+      ${props => highlightColor(props.theme.palette.interactive)};
+    padding-bottom: 2px;
+  }
 `;
 const UnstyledA = styled.a`
   text-decoration: none;
