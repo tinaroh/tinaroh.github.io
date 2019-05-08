@@ -1,8 +1,8 @@
 {
-  "main.js": "/static/js/main.3ede44f1.chunk.js",
-  "main.js.map": "/static/js/main.3ede44f1.chunk.js.map",
-  "static/js/1.99bf33c4.chunk.js": "/static/js/1.99bf33c4.chunk.js",
-  "static/js/1.99bf33c4.chunk.js.map": "/static/js/1.99bf33c4.chunk.js.map",
+  "main.js": "/static/js/main.9bcc0ee6.chunk.js",
+  "main.js.map": "/static/js/main.9bcc0ee6.chunk.js.map",
+  "static/js/1.1026e3be.chunk.js": "/static/js/1.1026e3be.chunk.js",
+  "static/js/1.1026e3be.chunk.js.map": "/static/js/1.1026e3be.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/logo.png": "/static/media/logo.ae508b0e.png",
@@ -11,6 +11,6 @@
   "static/media/drrrcelty.jpg": "/static/media/drrrcelty.0a60b49a.jpg",
   "static/media/pokemongreen.jpg": "/static/media/pokemongreen.bfa41099.jpg",
   "index.html": "/index.html",
-  "precache-manifest.30d66d33948e9ea8f71076ecf5563c1a.js": "/precache-manifest.30d66d33948e9ea8f71076ecf5563c1a.js",
+  "precache-manifest.d7c0a0e3f71356edbb192a210cf4000e.js": "/precache-manifest.d7c0a0e3f71356edbb192a210cf4000e.js",
   "service-worker.js": "/service-worker.js"
 }

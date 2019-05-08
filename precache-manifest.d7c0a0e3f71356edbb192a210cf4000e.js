@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3ede44f1b80b585f8511",
-    "url": "/static/js/main.3ede44f1.chunk.js"
+    "revision": "9bcc0ee611b0cc4f6569",
+    "url": "/static/js/main.9bcc0ee6.chunk.js"
   },
   {
-    "revision": "99bf33c447f8e32737b7",
-    "url": "/static/js/1.99bf33c4.chunk.js"
+    "revision": "1026e3be33109bd13d34",
+    "url": "/static/js/1.1026e3be.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/static/media/pokemongreen.bfa41099.jpg"
   },
   {
-    "revision": "f4b0cf09af76d7ead59509c36649df36",
+    "revision": "277c691c3cbcde1c744c7edc1ac052ee",
     "url": "/index.html"
   }
 ];
