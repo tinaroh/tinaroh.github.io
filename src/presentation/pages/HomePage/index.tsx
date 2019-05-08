@@ -18,6 +18,7 @@ import { Paragraph } from "src/presentation/utility/Paragraph";
 
 import logo from "public/assets/images/logo/logo.png";
 
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import img4 from "public/assets/images/art/aliveaoi.jpg";
 import img1 from "public/assets/images/art/cartoonkid.png";
 import img3 from "public/assets/images/art/drrrcelty.jpg";
@@ -50,6 +51,17 @@ const pageEntries: INavBarProps["entries"] = [
     displayText: "contact",
     to: "#contact",
     kind: NavEntryKind.LINK
+  }
+];
+
+const iconEntries: INavBarProps["icons"] = [
+  {
+    icon: faLinkedin,
+    to: "https://www.linkedin.com/in/tinaroh"
+  },
+  {
+    icon: faGithub,
+    to: "https://github.com/tinaroh"
   }
 ];
 
@@ -143,7 +155,7 @@ export class HomePage extends React.Component<{}> {
   public render() {
     return (
       <>
-        <NavBar entries={pageEntries} />
+        <NavBar entries={pageEntries} icons={iconEntries} />
         <BannerSection />
 
         <PageBody>
