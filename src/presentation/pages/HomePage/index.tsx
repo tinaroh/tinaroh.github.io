@@ -23,6 +23,7 @@ import img1 from "public/assets/images/art/cartoonkid.png";
 import img3 from "public/assets/images/art/drrrcelty.jpg";
 import img2 from "public/assets/images/art/pokemongreen.jpg";
 import { Link } from "react-router-dom";
+import { TextBlockStyle } from "src/presentation/utility/mixins/text/TextBlockStyle";
 
 const pageEntries: INavBarProps["entries"] = [
   {
@@ -52,6 +53,17 @@ const pageEntries: INavBarProps["entries"] = [
   }
 ];
 
+const AboutMeOne = styled(H3)`
+  margin-top: 2rem;
+  ${TextBlockStyle};
+`;
+const AboutMeTwo = styled(H3)`
+  ${TextBlockStyle};
+`;
+const AboutMeThree = styled(H3)`
+  margin-bottom: 3rem;
+`;
+
 const PageSectionTitle = styled(H2)`
   color: ${props => props.theme.palette.secondary};
 `;
@@ -59,7 +71,7 @@ const SectionTitle = styled(H3)`
   color: ${props => props.theme.palette.primary};
 `;
 const SectionSubtitle = styled(H4)`
-  color: ${props => props.theme.palette.primary};
+  color: ${props => props.theme.palette.secondary};
 `;
 
 const BannerSection = styled.section`
@@ -124,7 +136,7 @@ const ContactSectionTitle = styled(H2)`
 `;
 
 const mailtoLink = `mailto:me@tinaroh.com?subject=${encodeURI(
-  "Saying hi from the Internet!!"
+  "El Psy Congroo"
 )}`;
 const renderBottomCenterControls = () => <></>;
 export class HomePage extends React.Component<{}> {
@@ -135,6 +147,14 @@ export class HomePage extends React.Component<{}> {
         <BannerSection />
 
         <PageBody>
+          <AboutMeOne>Living in the now.</AboutMeOne>
+          <AboutMeTwo>
+            Striving to become the best version of me, one day at a time.
+          </AboutMeTwo>
+          <AboutMeThree>
+            Trying to make the world better while I'm at it.
+          </AboutMeThree>
+
           <PageSectionTitle id="work">work</PageSectionTitle>
 
           <SectionTitle>Raha</SectionTitle>
