@@ -23,7 +23,7 @@ import img4 from "public/assets/images/art/aliveaoi.jpg";
 import img1 from "public/assets/images/art/cartoonkid.png";
 import img3 from "public/assets/images/art/drrrcelty.jpg";
 import img2 from "public/assets/images/art/pokemongreen.jpg";
-import { Link } from "react-router-dom";
+import { Link } from "src/presentation/utility/Link";
 import { TextBlockStyle } from "src/presentation/utility/mixins/text/TextBlockStyle";
 
 const pageEntries: INavBarProps["entries"] = [
@@ -40,11 +40,6 @@ const pageEntries: INavBarProps["entries"] = [
   {
     displayText: "art",
     to: "#art",
-    kind: NavEntryKind.LINK
-  },
-  {
-    displayText: "blog",
-    to: "#blog",
     kind: NavEntryKind.LINK
   },
   {
@@ -81,9 +76,11 @@ const PageSectionTitle = styled(H2)`
 `;
 const SectionTitle = styled(H3)`
   color: ${props => props.theme.palette.primary};
+  margin-top: 2rem;
 `;
 const SectionSubtitle = styled(H4)`
   color: ${props => props.theme.palette.secondary};
+  margin: 0.5rem 0;
 `;
 
 const BannerSection = styled.section`
@@ -168,67 +165,73 @@ export class HomePage extends React.Component<{}> {
           </AboutMeThree>
 
           <PageSectionTitle id="work">work</PageSectionTitle>
+          <Paragraph>
+            These are my broader reflections on my work experiences. Specifics
+            on what I worked on can be found on my{" "}
+            <Link to="https://www.linkedin.com/in/tinaroh">LinkedIn</Link>.
+          </Paragraph>
 
-          <SectionTitle>Raha</SectionTitle>
+          <SectionTitle>
+            Raha - <Link to="https://raha.app">https://raha.app</Link>
+          </SectionTitle>
           <SectionSubtitle>Co-founder</SectionSubtitle>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            I joined a team of <Link to="https://rahulgi.com">very</Link>{" "}
+            <Link to="https://osdiab.github.io">cool</Link>{" "}
+            <Link to="https://www.linkedin.com/in/markulr">people</Link> to try
+            to make an idealistic vision of a digital universal basic income
+            real. I learned more about how the world operates and started to
+            hone my naive optimism into a more educated one while trying not to
+            fall into cynicism. I increased my knowledge about history, economy,
+            politics, cryptocurrency, startups, marketplaces, and people. I
+            started working in React Native and TypeScript. I also fulfilled a
+            dream to live in Japan along the way.
           </Paragraph>
 
           <SectionTitle>Snapchat</SectionTitle>
           <SectionSubtitle>Software Engineer</SectionSubtitle>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            I joined Snapchat as an intern in 2013 to a three-person Android
+            team supporting millions of users. After experiencing the thrill and
+            terror of shipping big features to many users, I hopped onto the
+            rocket ship full-time. I learned about the joys and pains of
+            creating a product for millions of users and hundreds (if not
+            thousands) of devices. I learned to dig deep, face bizarre and tough
+            problems, and still come out with solutions, even if imperfect. I
+            worked with talented people from many departments and backgrounds. I
+            saw how design risks paid off. I experienced how a company and all
+            its aspects scale, planned or not; sometimes gracefully, sometimes
+            not. I worked and adapted to change at each scale from a private
+            startup of 35 to a public company of thousands.
           </Paragraph>
 
           <SectionTitle>Google</SectionTitle>
           <SectionSubtitle>Software Engineering Intern</SectionSubtitle>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            My first software engineering internship came through the
+            Engineering Practicum program. I developed my confidence in coding
+            through the mentorship of amazing mentors and inspirational peers. I
+            learned the importance of testing and code quality, and committed my
+            first line of open source code. I thrived in a strong team culture
+            by working with an incredibly disciplined but fun team, many of whom
+            came to Google from startups. I experienced the world-class tools,
+            processes, and culture, though I didn't appreciate them enough at
+            the time to seek out how they were built.
           </Paragraph>
 
           <PageSectionTitle id="code">code</PageSectionTitle>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Java. Kotlin. Android. TypeScript. React Native. React.
           </Paragraph>
 
           <PageSectionTitle id="art">art</PageSectionTitle>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            I've loved to draw since forever (primarily anime and cartoons) and
+            I'm finally getting back into it.
           </Paragraph>
           <Carousel
             heightMode="first"
-            autoplay={true}
+            width="500"
             wrapAround={true}
             renderBottomCenterControls={renderBottomCenterControls}
           >
@@ -237,13 +240,11 @@ export class HomePage extends React.Component<{}> {
             <img src={img3} alt="Durarara!! Fanart - Celty" />
             <img src={img4} alt="Alive Fanart - Aoi Tezuka" />
           </Carousel>
-          <PageSectionTitle id="blog">blog</PageSectionTitle>
-          <SectionTitle>link out to blog</SectionTitle>
         </PageBody>
         <ContactSection id="contact">
           <ContactSectionTitle id="contact">contact</ContactSectionTitle>
           <Paragraph>
-            email at <Link to={mailtoLink}>me@tinaroh.com</Link>,
+            email at <Link to={mailtoLink}>me@tinaroh.com</Link>.
           </Paragraph>
         </ContactSection>
       </>

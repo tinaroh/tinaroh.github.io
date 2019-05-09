@@ -29,6 +29,7 @@ const HyperlinkA = styled.a`
   color: ${props => props.theme.palette.interactive};
   font-family: ${props => props.theme.headerText.fontFamily},
     ${props => props.theme.headerText.fontFallback};
+  font-size: 1.1rem;
   text-decoration: none;
   transition: color 0.1s ease-in;
 

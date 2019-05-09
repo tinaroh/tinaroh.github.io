@@ -3,5 +3,6 @@ import { TextBlockStyle } from "src/presentation/utility/mixins/text/TextBlockSt
 import { TextStyle } from "src/presentation/utility/mixins/text/TextStyle";
 
 export const Paragraph = styled.p`
-  ${TextStyle} ${TextBlockStyle};
+  ${TextStyle};
+  ${TextBlockStyle};
 `;

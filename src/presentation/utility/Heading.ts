@@ -16,7 +16,7 @@ export const H2 = styled.h2`
     ${props => props.theme.headerText.fontFallback};
   font-size: 1.5rem;
   ${HeaderMixin};
-  ${TextBlockStyle};
+  margin-bottom: 0.5rem;
 `;
 export const H3 = styled.h3`
   font-family: ${props => props.theme.headerText.fontFamily},
@@ -25,7 +25,7 @@ export const H3 = styled.h3`
   ${HeaderMixin};
 `;
 
-export const H4 = styled(Paragraph)`
+export const H4 = styled.h4`
   font-size: 1.1rem;
   color: ${props => props.theme.palette.secondary};
   ${HeaderMixin};
